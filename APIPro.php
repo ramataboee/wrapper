@@ -19,8 +19,8 @@ function callAPI($method, $url, $data){
             $url = sprintf("%s?%s", $url, http_build_query($data));
    }
 
-   $certificate = getcwd()."/nitssol1_cert.pem";//;
-   $key = getcwd()."/nitssol1_key.pem";
+   $certificate = getcwd()."YOUR_CERT_PATH.pem";
+   $key = getcwd()."/YOUR_KEY_PATH.pem";
 
    // OPTIONS:
    curl_setopt($curl, CURLOPT_URL, $url);
@@ -43,5 +43,3 @@ function callAPI($method, $url, $data){
    return $result;
 
 }
-
-?>

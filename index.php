@@ -1,6 +1,5 @@
 <?php
 require_once 'APIPro.php';
-//header('Content-Type: application/json');
 
 //Get API request parameters
 $results = array();
@@ -47,4 +46,3 @@ if( !isset($results['error']) ) {
     }
 
 echo json_encode($results);
-?>
